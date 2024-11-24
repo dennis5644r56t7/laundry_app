@@ -15,9 +15,9 @@ class MpesaAPI:
         self.passkey = current_app.config['MPESA_PASSKEY']
         
         # API endpoints
-        self.auth_url = "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials"
-        self.stk_push_url = "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest"
-        self.query_url = "https://sandbox.safaricom.co.ke/mpesa/stkpushquery/v1/query"
+        self.auth_url = "https://api.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials"
+        self.stk_push_url = "https://api.safaricom.co.ke/mpesa/stkpush/v1/processrequest"
+        self.query_url = "https://api.safaricom.co.ke/mpesa/stkpushquery/v1/query"
         
     def get_auth_token(self):
         try:
