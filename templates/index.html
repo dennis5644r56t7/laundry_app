@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwamboka Laundry - Professional Laundry Services</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero" data-aos="fade-up" data-aos-duration="1000">
+        <div class="hero-content">
+            <h1>Your Trusted Laundry Partner</h1>
+            <p>Experience premium laundry care with Kwamboka Laundry. We treat your clothes with the attention they deserve.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">Our Services</a>
+                <a href="#contact" class="btn btn-outline">Contact Us</a>
+            </div>
+            <div class="hero-features">
+                <div class="feature">
+                    <i class="fas fa-truck"></i>
+                    <span>Free Pickup & Delivery</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-clock"></i>
+                    <span>Quick Turnaround</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>100% Care Guarantee</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="{{ url_for('static', filename='images/hero-laundry.jpg') }}" alt="Professional Laundry Service">
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
+            <h2>Why Choose Kwamboka Laundry?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-medal"></i>
+                    <h3>Premium Quality</h3>
+                    <p>Expert care for all types of fabrics using professional-grade equipment and eco-friendly products.</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-hand-sparkles"></i>
+                    <h3>Professional Care</h3>
+                    <p>Our trained staff handles your garments with utmost care, ensuring the best results every time.</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-wallet"></i>
+                    <h3>Affordable Rates</h3>
+                    <p>Competitive pricing with no hidden charges. Pay only for what you need.</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fas fa-headset"></i>
+                    <h3>Customer Support</h3>
+                    <p>Dedicated support team available to assist you with any queries or concerns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>Regular Wash & Iron</h3>
+                    <p>Complete washing and ironing service for your daily wear clothes.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-gem"></i>
+                    <h3>Dry Cleaning</h3>
+                    <p>Professional dry cleaning for your delicate and special garments.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-couch"></i>
+                    <h3>Home Textiles</h3>
+                    <p>Cleaning service for curtains, beddings, and other home fabrics.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-star"></i>
+                    <h3>Premium Care</h3>
+                    <p>Special treatment for designer wear and sensitive fabrics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <h2>Our Pricing</h2>
+            <div class="pricing-categories">
+                <!-- Regular Wear -->
+                <div class="category" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Regular Wear</h3>
+                    <div class="price-item">
+                        <span>T-Shirts</span>
+                        <span>Ksh 100</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Shirts</span>
+                        <span>Ksh 150</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Trousers</span>
+                        <span>Ksh 200</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Dresses</span>
+                        <span>Ksh 300</span>
+                    </div>
+                </div>
+
+                <!-- Heavy Wear -->
+                <div class="category" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Heavy Wear</h3>
+                    <div class="price-item">
+                        <span>Jackets</span>
+                        <span>Ksh 400</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Jeans</span>
+                        <span>Ksh 250</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Coats</span>
+                        <span>Ksh 500</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Sweaters</span>
+                        <span>Ksh 300</span>
+                    </div>
+                </div>
+
+                <!-- Home Textiles -->
+                <div class="category" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Home Textiles</h3>
+                    <div class="price-item">
+                        <span>Bedsheets (Single)</span>
+                        <span>Ksh 300</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Bedsheets (Double)</span>
+                        <span>Ksh 400</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Duvet (Single)</span>
+                        <span>Ksh 600</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Duvet (Double)</span>
+                        <span>Ksh 800</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Curtains (per piece)</span>
+                        <span>Ksh 400</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                    <div class="info-item">
+                        <div class="icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>0792508277 / 0113534007</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>kariukidennis782@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Location</h3>
+                            <p>Kisii, Kenya</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left" data-aos-delay="200">
+                    <form action="{{ url_for('contact.contact') }}" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Your Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Kwamboka Laundry</h3>
+                    <p>Your trusted laundry partner</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> 0792508277 / 0113534007</p>
+                    <p><i class="fas fa-envelope"></i> kariukidennis782@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kisii, Kenya</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kwamboka Laundry. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{{ url_for('static', filename='js/smooth-loading.js') }}"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+    </script>
+</body>
+</html>
